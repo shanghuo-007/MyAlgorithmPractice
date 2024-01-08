@@ -1,3 +1,5 @@
+package medium200;
+
 import java.util.*;
 
 /**
@@ -53,6 +55,9 @@ public class FiveGNetworkConstruction {
                     connected.add(num.get(1));
                 }
             }
+        }
+        if (connected.size() != N) {
+            return -1;
         }
         return res;
     }
